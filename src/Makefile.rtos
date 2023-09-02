@@ -1,0 +1,7 @@
+SRCFILES	+= FreeRTOS/heap_4.c FreeRTOS/list.c FreeRTOS/port.c FreeRTOS/tasks.c FreeRTOS/opencm3.c # FreeRTOS/queue.c
+
+TGT_CFLAGS	+= -I./FreeRTOS -I.
+TGT_CXXFLAGS	+= -I./FreeRTOS -I.
+
+#LD		= $(CC)		# For C projects (default)
+#LD		= $(CXX)	# For C++ projects
